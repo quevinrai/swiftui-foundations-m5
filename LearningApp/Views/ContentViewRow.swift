@@ -32,6 +32,7 @@ struct ContentViewRow: View {
                     Text(lesson.duration)
                 }
             }
+            .foregroundColor(.black)
             .padding()
         }
         .padding(.bottom, 5)
