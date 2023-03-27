@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVStack {
+                // Confirm that currentModule is set
+                if model.currentModule != nil {
+                    ForEach(0..<model.currentModule!.content.lessons.count, id: \.self) { index in
+                        ContentViewRow(index: index)
+                    }
+                }
+            }
+            .padding()
+            .navigationTitle("Learn \(model.currentModule?.category ?? "")")
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//            .environmentObject(ContentModel())
+//    }
+//}

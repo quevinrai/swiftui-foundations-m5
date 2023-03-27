@@ -17,6 +17,7 @@
 		DED0A4DC29D0848D00EC8E37 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0A4DB29D0848D00EC8E37 /* Models.swift */; };
 		DED0A4DE29D1D70000EC8E37 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0A4DD29D1D70000EC8E37 /* HomeViewRow.swift */; };
 		DED0A4E029D1DF2100EC8E37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0A4DF29D1DF2100EC8E37 /* ContentView.swift */; };
+		DED0A4E229D1E99000EC8E37 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0A4E129D1E99000EC8E37 /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		DED0A4DB29D0848D00EC8E37 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		DED0A4DD29D1D70000EC8E37 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		DED0A4DF29D1DF2100EC8E37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DED0A4E129D1E99000EC8E37 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				DED0A4C429D07DC300EC8E37 /* HomeView.swift */,
 				DED0A4DD29D1D70000EC8E37 /* HomeViewRow.swift */,
 				DED0A4DF29D1DF2100EC8E37 /* ContentView.swift */,
+				DED0A4E129D1E99000EC8E37 /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				DED0A4DE29D1D70000EC8E37 /* HomeViewRow.swift in Sources */,
 				DED0A4E029D1DF2100EC8E37 /* ContentView.swift in Sources */,
 				DED0A4C329D07DC300EC8E37 /* LearningApp.swift in Sources */,
+				DED0A4E229D1E99000EC8E37 /* ContentViewRow.swift in Sources */,
 				DED0A4D629D07E8100EC8E37 /* ContentModel.swift in Sources */,
 				DED0A4DC29D0848D00EC8E37 /* Models.swift in Sources */,
 			);
