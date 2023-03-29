@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var model: ContentModel
     
+    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
@@ -21,14 +22,17 @@ struct HomeView: View {
                         ForEach(model.modules) { module in
                             VStack(spacing: 20) {
                                 NavigationLink(
-                                    destination:
-                                        ContentView()
+                                    destination: ContentView()
                                         .onAppear(perform: {
-                                    model.beginModule(module.id)
-                                })) {
+                                            model.beginModule(module.id)
+                                            print(model.currentContentSelected)
+                                        }),
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected,
+                                    label: {
                                     // Learning Card
                                     HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
-                                }
+                                })
                                 
                                 
                                 
