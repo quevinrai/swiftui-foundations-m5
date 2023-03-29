@@ -25,7 +25,7 @@ struct HomeView: View {
                                     destination: ContentView()
                                         .onAppear(perform: {
                                             model.beginModule(module.id)
-                                            print(model.currentContentSelected)
+//                                            print(model.currentContentSelected)
                                         }),
                                     tag: module.id,
                                     selection: $model.currentContentSelected,
