@@ -112,9 +112,14 @@ struct TestView: View {
 
                 }
                 .navigationTitle("\(model.currentModule?.category ?? "") Test")
-            } else {
+            }
+            
+            else {
+                // If current question is nil, we show the result view
+                TestResultView(numCorrect: numCorrect)
+                
                 // Test hasn't loaded yet
-                ProgressView()
+//                ProgressView()
             }
         }
     }
